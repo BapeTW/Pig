@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pig Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page Title -->
+    <h1>Pig Dice Game</h1>
+    <hr>
+
+    <!-- Instructions -->
+    <h2>Instructions</h2>
+    <p><strong>Goal</strong>: Be the first to 200 points.</p>
+    <p><strong>Actions</strong>:</p>
+    <ul>
+        <li><strong>ROLL</strong>: Add roll number to current turn points. Roll of "1" ends turn and forfeits turn points.</li>
+        <li><strong>HOLD</strong>: Ends turn and adds turn points to total game points.</li>
+    </ul>
+
+    <!-- Players Area -->
+    <div class="players-row">
+        <!-- Player 1 -->
+        <div class="player-area">
+            <div id="p1-header" class="active">
+                Player 1 - Total Points: <span id="p1-points">0</span>
+            </div>
+            <hr>
+            <div>
+                <p>Turn Points: <span id="p1-turn-points">0</span></p>
+                <p><img id="p1-roll-img" src="images/dice3.png"><img id="p1-roll-img2" class="imgfloat" src="images/dice3.png"> </p>
+                <p><button id="p1-roll">Roll</button> <button id="p1-hold">Hold</button></p>
+            </div>
+        </div>
+        
+        <!-- Player 2  -->
+        <div class="player-area">
+            <div id="p2-header">
+                Player 2 - Total Points: <span id="p2-points">0</span>
+            </div>
+            <hr>
+            <div>
+                <p>Turn Points: <span id="p2-turn-points">0</span></p>
+                <p><img id="p2-roll-img" src="images/dice5.png"><img id="p2-roll-img2" class="imgfloat" src="images/dice5.png"></p>
+                <p><button id="p2-roll" disabled>Roll</button> <button id="p2-hold" disabled>Hold</button></p>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Load JavaScript -->
+    <script src="main.js"></script>
+    <script src="math.js"></script>
+</body>
+</html>
